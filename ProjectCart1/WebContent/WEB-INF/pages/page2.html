@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style type="text/css">
+body {
+	display: block;
+	position: relative;
+}
+
+body::after {
+	content: "";
+	background: url(cart.jpg);
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+</style>
+
+<title>page2</title>
+</head>
+<body bgcolor="#FFFFE0">
+	<center>
+		<h1>Welcome to SmallMart</h1>
+	</center>
+	<div align="right">
+		<form action="http://BLRPRGFWD31231:8082/ProjectCart1/viewCart"
+			method="get">
+			<input type="submit" value="View Cart">
+		</form>
+	</div>
+	<br>
+	<table>
+		<tr>
+			<td>Name</td>
+			<td>Image</td>
+			<td>View Description</td>
+			<td>Price</td>
+			<td>Select</td>
+		</tr>
+		<tr>
+			<td>Radio</td>
+			<td><img alt="radioimage" src="radio.jpg" width="150" height="150"></td>
+			<td>radio</td>
+			<td>2000</td>
+			<td><form action="http://BLRPRGFWD31231:8082/ProjectCart1/product4"
+					method="get">
+					<input type="submit" value="Add">
+				</form></td>
+		</tr>
+		<tr>
+			<td>Refrigerator</td>
+			<td><img alt="refrigeratorimage" src="refrigerator.jpg" width="150" height="150"></td>
+			<td>refrigerator</td>
+			<td>20000</td>
+			<td><form action="http://BLRPRGFWD31231:8082/ProjectCart1/product5"
+					method="get">
+					<input type="submit" value="Add">
+				</form></td>
+		</tr>
+		<tr>
+			<td>Shoes</td>
+			<td><img alt="shoesimage" src="shoes.jpg" width="150" height="150"></td>
+			<td>shoes</td>
+			<td>500</td>
+			<td><form action="http://BLRPRGFWD31231:8082/ProjectCart1/product6"
+					method="get">
+					<input type="submit" value="Add">
+				</form></td>
+		</tr>
+	</table>
+	<center><a href="http://BLRPRGFWD31231:8082/ProjectCart1/homepage"><h4>back</h4></a></center>
+</body>
+</html>

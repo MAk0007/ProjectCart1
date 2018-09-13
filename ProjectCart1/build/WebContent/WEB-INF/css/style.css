@@ -1,0 +1,17 @@
+#main{
+position:relative;
+}
+body{
+background-image: url('cart.jpg');
+opacity:0.2;
+width:300px;
+height:300px;
+position:absolute;
+}
+/* div#second{
+width:300px;
+height:300px;
+position:absolute;
+top: 0;
+left:0;
+} */
