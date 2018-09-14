@@ -22,7 +22,7 @@ public class CartController3 {
 	@Autowired
 	ProductDAO ProductDAO;
 	
-	   @RequestMapping(value = "/homepage", method = RequestMethod.GET)
+	   @RequestMapping(value = "/", method = RequestMethod.GET)
 	   public String redirect2() {
 	      return "redirect:/pages/homepage.html";
 	   }
