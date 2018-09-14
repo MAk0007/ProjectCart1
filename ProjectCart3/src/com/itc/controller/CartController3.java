@@ -14,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.itc.beans.Product;
 import com.itc.dao.ProductDAO;
+import com.mysql.jdbc.exceptions.MySQLIntegrityConstraintViolationException;
 
 
 @Controller
@@ -40,7 +41,13 @@ public class CartController3 {
 	   
 	   @RequestMapping(value = "/add", method = RequestMethod.POST)
 		public ModelAndView addToCart(@ModelAttribute Product product) {
-			boolean status=ProductDAO.add(product);
+			boolean status = false;
+			
+				status=ProductDAO.add(product);
+				
+		
+				
+			
 			String s= null;
 			if(status==true){
 				s="Product successfully added to your cart";
