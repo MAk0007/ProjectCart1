@@ -26,7 +26,7 @@ public class CartController2 {
 	@Autowired
 	private ProductDAO ProductDAO;
 	
-	   @RequestMapping(value = "/homepage", method = RequestMethod.GET)
+	   @RequestMapping(value = "/", method = RequestMethod.GET)
 	   public String redirect2() {
 	      return "redirect:/pages/homepage.html";
 	   }
