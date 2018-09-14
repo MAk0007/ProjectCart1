@@ -4,13 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.hibernate.HibernateException;
-import org.hibernate.Query;
+
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
+
 import org.hibernate.Transaction;
 
 import com.hibernate.util.HibernateUtil;
 import com.itc.beans.Product;
+
 
 public class ProductDAO{
 
@@ -22,15 +23,22 @@ public class ProductDAO{
 	      
 	      try {
 	         tx = session.beginTransaction();
-	        session.saveOrUpdate(product); 
+	        session.save(product); 
 	         //employeeID = (Integer) session.save(employee); 
 	         tx.commit();
 	         status=true;
 
-	      } catch (HibernateException e) {
+//	      } catch (HibernateException e) {
+	      } catch (javax.persistence.PersistenceException e) {
 	         if (tx!=null) tx.rollback();
+	         if(e.getCause() instanceof org.hibernate.exception.ConstraintViolationException)
+
+	         {status=false;}
+
 	         status= false;
-	      } finally {
+	         
+	      }
+	      finally {
 	         session.close(); 
 	      }
 	      return status;
