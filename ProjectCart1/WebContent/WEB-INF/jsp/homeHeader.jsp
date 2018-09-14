@@ -64,7 +64,7 @@ li.dropdown {
 </head>
 <body>
 	<ul>
-		<li style="float: right"><a href="http://BLRPRGFWD31231:8082/ProjectCart1/homepage">Home</a></li>
+		<li style="float: right"><a href="http://BLRPRGFWD31231:8082/ProjectCart1/">Home</a></li>
 
 
 	</ul>
