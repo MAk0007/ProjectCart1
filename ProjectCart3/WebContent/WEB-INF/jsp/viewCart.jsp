@@ -167,7 +167,7 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
-    window.location.href="http://BLRPRGFWD31231:8082/ProjectCart3/homepage";
+    window.location.href="http://BLRPRGFWD31231:8082/ProjectCart3/";
 }
 
 // When the user clicks anywhere outside of the modal, close it
