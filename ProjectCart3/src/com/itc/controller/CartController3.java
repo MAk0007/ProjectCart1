@@ -52,7 +52,7 @@ public class CartController3 {
 			if(status==true){
 				s="Product successfully added to your cart";
 			}else{
-				s="s="  "+product.getPname()+" already exists in your cart..!";";
+				s="  "+product.getPname()+" already exists in your cart..!";
 			}
 			return new ModelAndView("insert","status",s);
 		}
